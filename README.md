@@ -27,7 +27,7 @@ To install and run the project locally, follow these steps:
 2. Navigate to the project directory:
 
    ```
-   cd mern-todo
+   cd MERN-Notes-App.git
    ```
 
 3. Install server and client dependencies:
