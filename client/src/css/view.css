@@ -1,0 +1,134 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  max-height: calc(100vh);
+  overflow: hidden;
+  overflow-x: hidden;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff91;
+  z-index: 10;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+@keyframes popup {
+  0% {
+    scale: 0.5;
+  }
+  50% {
+    scale: 1.1;
+  }
+  75% {
+    scale: 0.7;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.inner_page {
+  max-width: calc(100vw - 10px);
+  min-width: 300px;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  background: #fff;
+  box-shadow: 3px 3px 6px #87878791;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 20px;
+  position: relative;
+  animation: popup 0.5s ease-in forwards;
+}
+
+.inner_page .title {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.description {
+  width: 100%;
+  box-shadow: none;
+  margin: 0;
+  white-space: pre-wrap;
+  max-height: 80vh;
+  height: 90%;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.options {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inner_page .options .close {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: 100;
+  position: relative;
+  margin: 0;
+  top: 0;
+  right: 0;
+}
+
+.copy,
+.inner_page .options .edit,
+.inner_page .options .delete {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfdfdf;
+  color: rgb(96, 96, 255);
+  cursor: pointer;
+}
+
+.highlight {
+  color: #333;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+pre {
+  padding: 10px;
+}
+
+.description div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description div li {
+  margin-top: 10px;
+  list-style: none;
+}
