@@ -1,4 +1,5 @@
-# MERN Todo App
+```markdown
+# MERN Mini Notes App
 
 A simple Todo application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
@@ -8,6 +9,7 @@ A simple Todo application built using the MERN (MongoDB, Express.js, React.js, N
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Project Structure](#project-structure)
 - [License](#license)
 
 ## Description
@@ -19,28 +21,44 @@ This Todo application allows users to create, read, update, and delete tasks. It
 To install and run the project locally, follow these steps:
 
 1. Clone the repository:
+```
 
-   ```
-   git clone https://github.com/Vinoth82003/MERN-Notes-App.git
-   ```
+git clone https://github.com/Vinoth82003/MERN-Notes-App.git
+
+```
 
 2. Navigate to the project directory:
 
-   ```
-   cd MERN-Notes-App.git
-   ```
+```
+
+cd MERN-Notes-App
+
+```
 
 3. Install server and client dependencies:
-   ```
-   npm install && npm install --prefix client
-   ```
+```
+
+npm install && npm install --prefix client
+
+```
+
+4. Create a `.env` file in the root directory and add the following values:
+
+```
+
+DB_URL=mongodb://localhost:27017/todoapp
+PORT=5000
+
+```
 
 ## Usage
 
 To start the application, run the following command:
 
 ```
+
 npm start
+
 ```
 
 This command will concurrently start the server and the client. The server will be running on `http://localhost:5000`, and the client will be running on `http://localhost:3000`.
@@ -55,7 +73,6 @@ The project relies on the following dependencies:
 - **express**: Version ^4.19.2
 - **mongoose**: Version ^8.2.3
 
-
 ## Project Structure
 
 - [Client README ](client/README.md)
@@ -65,4 +82,4 @@ The project relies on the following dependencies:
 
 This project is licensed under the ISC License. See the [LICENSE](LICENSE) file for details.
 
----
+```
