@@ -53,10 +53,8 @@ The project relies on the following dependencies:
 - **cors**: Version ^2.8.5
 - **dotenv**: Version ^16.4.5
 - **express**: Version ^4.19.2
-- **markdown-to-jsx**: Version ^7.4.5
 - **mongoose**: Version ^8.2.3
-- **prismjs**: Version ^1.29.0
-- **react-syntax-highlighter**: Version ^15.5.0
+
 
 ## Project Structure
 
