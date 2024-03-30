@@ -3,7 +3,6 @@ import "../css/list.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faEdit, faEye } from "@fortawesome/free-solid-svg-icons";
 import { detailsContext } from "../App";
-import Markdown from "markdown-to-jsx"; // Import markdown-to-jsx
 
 const TodoItem = ({ todo }) => {
   const value = useContext(detailsContext);
@@ -44,7 +43,7 @@ const TodoItem = ({ todo }) => {
       <div className="version">{todo.__v}</div>
       <h3 className="title">{todo.title}</h3>
       <p className="discription">
-        <Markdown>{todo.description}</Markdown>
+        <p>{todo.description}</p>
         {todo.description.length > 397 ? (
           <span className="readMore">....</span>
         ) : (
