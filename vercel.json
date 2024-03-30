@@ -2,10 +2,7 @@
   "version": 2,
   "name": "mern-todo",
   "builds": [
-    {
-      "src": "server/server.js",
-      "use": "@vercel/node"
-    },
+    { "src": "server/server.js", "use": "@vercel/node" },
     {
       "src": "client/package.json",
       "use": "@vercel/static-build",
@@ -14,11 +11,10 @@
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "server/server.js" },
-    { "src": "/(.*)", "dest": "client/build/$1" }
+    { "src": "/(.*)", "dest": "/client/build/$1" }
   ],
   "env": {
-    "MONGODB_URI": "mongodb://localhost:27017/todoapp",
-    "PORT": "5000",
-    "DB_URL": "mongodb://localhost:27017/todoapp"
+    "DB_URL": "mongodb://localhost:27017/todoapp",
+    "PORT": "5000"
   }
 }

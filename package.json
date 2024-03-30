@@ -1,16 +1,17 @@
 {
   "name": "mern-todo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Todo application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.",
   "main": "server/server.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vinoth S",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
@@ -20,6 +21,7 @@
     "mongoose": "^8.2.3"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "nodemon": "^2.0.15"
   }
 }
