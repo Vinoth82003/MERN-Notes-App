@@ -8,6 +8,7 @@ A simple Todo application built using the MERN (MongoDB, Express.js, React.js, N
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dependencies](#dependencies)
+- [Pre-requisites](#pre-requisites)
 - [Project Structure](#project-structure)
 - [License](#license)
 
@@ -63,6 +64,14 @@ The project relies on the following dependencies:
 - **dotenv**: Version ^16.4.5
 - **express**: Version ^4.19.2
 - **mongoose**: Version ^8.2.3
+
+## Pre-requisites
+
+Before running the project, make sure you have the following pre-requisites installed:
+
+- **Node.js**: Download and install Node.js from [here](https://nodejs.org/)
+- **MongoDB**: Download and install MongoDB from [here](https://www.mongodb.com/try/download/community)
+- **MongoDB Compass**: MongoDB Compass is optional but recommended for database visualization. Download it from [here](https://www.mongodb.com/try/download/compass)
 
 ## Project Structure
 
