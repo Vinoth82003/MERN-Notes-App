@@ -21,7 +21,7 @@ To install and run the project locally, follow these steps:
 1. Clone the repository:
 
    ```
-   git clone <repository_url>
+   git clone https://github.com/Vinoth82003/MERN-Notes-App.git
    ```
 
 2. Navigate to the project directory:
