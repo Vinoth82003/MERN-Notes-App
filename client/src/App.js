@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import { Dashboard } from "./components/Dashboard";
 import Login from "./components/Login";
+import Admin from "./components/Admin";
 
 export const detailsContext = createContext();
 
@@ -33,7 +34,8 @@ const App = () => {
 
   return (
     <detailsContext.Provider value={value}>
-      <div>{isAuth ? <Dashboard /> : <Login />}</div>
+      <div>{isAuth ? <Dashboard /> : <Admin />}</div>
+      <Login />
     </detailsContext.Provider>
   );
 };

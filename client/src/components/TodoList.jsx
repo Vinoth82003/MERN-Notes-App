@@ -12,7 +12,7 @@ const TodoList = () => {
     console.log(window.location.host);
     console.log(window.location.pathname);
     try {
-      const response = await fetch("http://172.16.20.84:5000/api/todos");
+      const response = await fetch("http://192.168.15.88:5000/api/todos");
       // console.log("Response status:", response.status);
       const data = await response.json();
       console.log("Response data:", data);

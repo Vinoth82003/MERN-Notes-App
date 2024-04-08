@@ -26,16 +26,19 @@ const EditForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://172.16.20.84:5000/api/todos/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          title: title,
-          description: description,
-        }),
-      });
+      const response = await fetch(
+        `http://192.168.15.88:5000/api/todos/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            title: title,
+            description: description,
+          }),
+        }
+      );
 
       const data = await response.json();
       console.log(data);
