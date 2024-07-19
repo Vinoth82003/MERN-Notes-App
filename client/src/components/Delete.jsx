@@ -18,12 +18,9 @@ const Delete = () => {
 
   async function handleConfirm() {
     try {
-      const response = await fetch(
-        `http://192.168.15.88:5000/api/todos/${id}`,
-        {
-          method: "DELETE",
-        }
-      );
+      const response = await fetch(`hthttp://localhost:5000/api/todos/${id}`, {
+        method: "DELETE",
+      });
       if (response.ok) {
         value.setviewNote(false);
         console.log("Todo item deleted successfully");

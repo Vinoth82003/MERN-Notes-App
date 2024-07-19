@@ -6,7 +6,7 @@ import Admin from "./components/Admin";
 export const detailsContext = createContext();
 
 const App = () => {
-  const isAuth = false;
+  const isAuth = true;
   const [popup, setPopup] = useState(false);
   const [editpopup, setEditPopup] = useState(false);
   const [viewNote, setviewNote] = useState(false);

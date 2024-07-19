@@ -20,7 +20,7 @@ const TodoForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://192.168.15.88:5000/api/todos", {
+      const response = await fetch("http://localhost:5000/api/todos", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
